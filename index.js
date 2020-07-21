@@ -39,7 +39,7 @@ var chartColors = {
 };
 
 var color = Chart.helpers.color;
-var colorNames = Object.keys(window.chartColors);
+var colorNames = Object.keys(chartColors);
 
 var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -192,7 +192,7 @@ window.addEventListener("DOMContentLoaded", function (e) {
     _barChart.update();
   });
 
-  var colorNames = Object.keys(window.chartColors);
+  //var colorNames = Object.keys(chartColors);
   document.getElementById("btnAddDataset").addEventListener("click", function () {
     var colorName = colorNames[_barChartData.datasets.length % colorNames.length];
     var dsColor = chartColors[colorName];
